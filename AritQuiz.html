@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)https://h5p.open.ubc.ca/h5p-examples/arithmetic-quiz/ -->
+<html lang="en-US"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Arithmetic Quiz</title>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width"> <!-- needed for responsive -->
+<link rel="dns-prefetch" href="https://cdn.ubc.ca/">
+
+<!-- Stylesheets -->
+<link href="./Arithmetic Quiz_files/ubc-clf-full-bw.min.css" rel="stylesheet">
+	
+<link rel="profile" href="http://gmpg.org/xfn/11">
+
+<link rel="pingback" href="https://h5p.open.ubc.ca/xmlrpc.php">
+
+<meta name="robots" content="max-image-preview:large">
+<meta name="template" content="UBC CLF Basic 1.0.4">
+<link rel="dns-prefetch" href="https://cdn.ubc.ca/">
+<link rel="alternate" type="application/rss+xml" title="UBC H5P Open Hub » Feed" href="https://h5p.open.ubc.ca/feed/">
+<link rel="alternate" type="application/rss+xml" title="UBC H5P Open Hub » Comments Feed" href="https://h5p.open.ubc.ca/comments/feed/">
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/h5p.open.ubc.ca\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.2.2"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){p.clearRect(0,0,i.width,i.height),p.fillText(e,0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(t,0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s("\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!s("\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!s("\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!s("\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script><script src="./Arithmetic Quiz_files/wp-emoji-release.min.js.download" type="text/javascript" defer=""></script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="./Arithmetic Quiz_files/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="classic-theme-styles-css" href="./Arithmetic Quiz_files/classic-themes.min.css" type="text/css" media="all">
+<style id="global-styles-inline-css" type="text/css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--ubc-white: #ffffff;--wp--preset--color--ubc-black: #222222;--wp--preset--color--ubc-blue: #002145;--wp--preset--color--ubc-secondary-blue: #0055b7;--wp--preset--color--ubc-tertiary-blue: #00a7e1;--wp--preset--color--ubc-quaternary-blue: #40b4e5;--wp--preset--color--ubc-quinary-blue: #6ec4e8;--wp--preset--color--ubc-senary-blue: #97d4e9;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" id="h5p-plugin-styles-css" href="./Arithmetic Quiz_files/h5p.css" type="text/css" media="all">
+<link rel="stylesheet" id="style-css" href="./Arithmetic Quiz_files/style.css" type="text/css" media="all">
+<script type="text/javascript" src="./Arithmetic Quiz_files/jquery.min.js.download" id="jquery-core-js"></script>
+<script type="text/javascript" src="./Arithmetic Quiz_files/jquery-migrate.min.js.download" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="https://h5p.open.ubc.ca/wp-json/"><link rel="alternate" type="application/json" href="https://h5p.open.ubc.ca/wp-json/wp/v2/pages/142"><link rel="canonical" href="https://h5p.open.ubc.ca/h5p-examples/arithmetic-quiz/">
+<link rel="shortlink" href="https://h5p.open.ubc.ca/?p=142">
+<link rel="alternate" type="application/json+oembed" href="https://h5p.open.ubc.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fh5p.open.ubc.ca%2Fh5p-examples%2Farithmetic-quiz%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://h5p.open.ubc.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fh5p.open.ubc.ca%2Fh5p-examples%2Farithmetic-quiz%2F&amp;format=xml">
+
+<!--[if lte IE 7]>
+<link href="https://cdn.ubc.ca/clf/7.0.4/css/font-awesome-ie7.css" rel="stylesheet">
+<![endif]-->
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script src="//cdn.ubc.ca/clf/html5shiv.min.js"></script>
+<![endif]-->
+
+<!-- Le fav and touch icons -->
+<link rel="shortcut icon" href="https://cdn.ubc.ca/clf/7.0.4/img/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://cdn.ubc.ca/clf/7.0.4/img/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://cdn.ubc.ca/clf/7.0.4/img/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://cdn.ubc.ca/clf/7.0.4/img/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="https://cdn.ubc.ca/clf/7.0.4/img/apple-touch-icon-57-precomposed.png">
+<style type="text/css" media="screen">#ubc7-unit { background: #002145; }</style>
+		<style type="text/css" id="wp-custom-css">
+			h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+span,
+td,
+th{
+	font-family: 'Open Sans', sans-serif;
+}
+
+#ubc7-unit-navigation ul {
+	width: 100%;
+}
+
+
+  #ubc7-unit-navigation ul .on-the-right {
+	float: left;
+}
+
+@media only screen and (min-width: 980px) {
+  #ubc7-unit-navigation ul .on-the-right {
+	float: right;
+}
+}
+
+.logged-in .log-in-link,
+.logged-out .dashboard-link {
+	display: none;
+}
+
+.entry-content {
+	padding: 0 1rem;
+}
+
+.home-banner-image {
+	margin-left: calc(-15px - 1rem);
+  margin-top: -15px;
+  width: calc(100% + 30px + 2rem);
+}
+
+.ubc-h5p-accessibility-note-group {
+	padding: 2rem;
+	margin-top: 2rem;
+}
+
+.ubc-h5p-accessibility-note-group h2 {
+	margin-top: 0;
+}
+
+.has-ubc-secondary-blue-background-color {
+	background-color: rgb(0,85,183);
+	color: white;
+}
+
+.has-ubc-tertiary-blue-background-color {
+	background-color: rgb(0,167,225);
+	color: white;
+}
+
+.has-ubc-white-color {
+	color: white;
+}
+
+.feather.feather-book-open,
+.home-next-steps svg,
+.home-note-beta svg{
+	position: relative;
+	top: 4px;
+	margin-right: 0.4rem;
+}
+
+.home-next-steps {
+	padding: 2rem;
+}
+
+.home-next-steps h2 {
+	margin-top: 0;
+	color: black;
+}
+
+.has-ubc-senary-blue-background-color {
+	background-color: rgb(204,231,248);
+}
+
+.no-top-margin {
+	margin-top: 0;
+}
+
+table td{
+  vertical-align: top;
+	padding: 10px;
+	border: 1px solid #ababab;
+}
+
+.text-overlay p{
+	color: #000 !important;
+}
+
+.text-overlay p:last-child{
+	margin-bottom: 0;
+}
+
+h3 .feather {
+	position: relative;
+	top: 2px;
+}
+
+#ubc7-unit-navigation .feather {
+	position: relative;
+	top: 4px;
+}
+
+#ubc7-unit-navigation li:hover .feather {
+	stroke: white;
+}
+
+#menu-top {
+	height: 45px;
+}
+
+@media only screen and (max-width: 1199px) {
+
+	#menu-top {
+		height: 40px;
+	}
+	
+	#ubc7-unit-navigation .feather {
+		height: 16px;
+		width: 16px;
+	}
+}
+
+ul.h5p-roadmap-posts {
+	margin-left: 0;
+	margin-top: 1.5rem;
+}
+
+ul.h5p-roadmap-posts li {
+	padding: 1.5rem;
+	background: rgb(245, 245, 245);
+	border-radius: 0.25rem;
+}
+
+.h5p-bubble {
+	display: inline-block;
+  float: right;
+	margin-right: 0.75rem;
+	line-height: 1.85rem;
+}
+
+.h5p-bubble.wp-block-post-terms a {
+    background: #08c;
+    color: white;
+    text-decoration: none;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 0.03rem;
+}
+
+.h5p-bubble.wp-block-post-terms a:hover {
+	background-color: rgb(0,85,183);
+}
+
+.h5p-roadmap-posts .wp-block-post-title {
+	margin-bottom: 0.5rem;
+	margin-top: 0;
+	font-size: 1.4rem;
+}
+
+.h5p-roadmap-posts time::before {
+	display: inline-block;
+	margin-right: 0.35rem;
+	position: relative;
+	top: 2px;
+	height: 16px;
+	width: 16px;
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-calendar'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");
+}
+
+.h5p-roadmap-posts .wp-block-post-date {
+	margin-bottom: 1rem;
+	font-style: italic;
+}
+
+.h5p-roadmap-posts .wp-block-post-excerpt__more-text {
+	display: inline-block;
+}
+
+.h5p-roadmap-posts .wp-block-post-excerpt__more-text a {
+	background: rgb(0,33,69);
+	text-decoration: none;
+	color: white;
+	padding: 0.5rem 1rem;
+	border-radius: 0.25rem;
+	margin-top: 1rem;
+}
+
+.h5p-roadmap-posts .wp-block-post-excerpt__more-text a:hover {
+	background-color: rgb(0,85,183);
+}
+
+@media only screen and (min-width: 1100px) {
+
+	.singular-post .entry-content {
+		margin-top: 2rem;
+		padding-left: 0;
+	}
+
+	.singular-post #container {
+		padding: 2rem;
+	}
+
+	.singular-post #comments-template {
+		margin-top: 2rem;
+	}
+
+	.singular-post .comment-list li {
+		padding: 1rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.singular-post .comment-wrap .avatar {
+		border: none;
+	}
+
+	.singular-post .comment-meta-data {
+		margin-bottom: 1rem;
+	}
+
+	.singular-post .published {
+		font-style: italic;
+	}
+
+	.singular-post .post-title {
+		margin-top: 0;
+	}
+	
+	.h5p-changelog li {
+		position: relative;
+		display: inline-block;
+	}
+	
+	.h5p-changelog li::before {
+		content: "";
+  z-index: -1;
+  overflow: hidden;
+  transform: rotate(-135deg);
+  width: 120px;
+  display: block; 
+  background: #79A70A;
+  background: linear-gradient(#0088CC 0%, #0088CC 100%);
+  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 34px;
+  right: -16px;
+  clip-path: polygon(120px 20px, 90px -10px, 30px -10px, 0px 20px, 10px 30px,  110px 30px);
+  height: 20px;
+  width: 120px;
+	}
+	
+	.h5p-changelog li::after {
+		content: "complete";
+  z-index: 1;
+  overflow: hidden;
+  font-size: 10px;
+  font-weight: bold;
+  color: #FFF;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 20px;
+  transform: rotate(45deg);
+  width: 120px;
+  display: block; 
+  background: #79A70A;
+  background: linear-gradient(#0088CC 0%, #0088CC 100%);
+  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 1.7rem;
+	right: -1.5rem;
+  clip-path: polygon(120px 20px, 90px -10px, 30px -10px, 0px 20px, 10px 30px,  110px 30px)
+	}
+
+}
+
+.page-finding-your-ubc-kaltura-video-id #container {
+	padding: 2rem;
+}
+
+.page-finding-your-ubc-kaltura-video-id .entry-content {
+	padding: 0;
+	margin-top: 2rem;
+}
+
+.page-finding-your-ubc-kaltura-video-id ol {
+    margin-left: 1em;
+    margin-top: 2rem;
+}
+
+.page-finding-your-ubc-kaltura-video-id .entry-content figure {
+	margin: 2rem 0;
+	padding: 2rem;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+
+.page-finding-your-ubc-kaltura-video-id .entry-content figure figcaption {
+	margin-top: 2rem;
+	background: rgb(245,245,245);
+	padding: 1rem;
+	border-radius: 3px;
+}
+
+.h5p-content-width {
+	max-width: 940px;
+}		</style>
+		
+<style type="text/css">.oridomi-active{background-color:transparent !important;background-image:none !important;-webkit-box-sizing:border-box !important;border:none !important;outline:none !important;padding:0 !important;position:relative;-webkit-transform-style:preserve-3d !important;-webkit-mask:none !important;}.oridomi-clone{margin:0 !important;-webkit-box-sizing:border-box !important;overflow:hidden !important;display:block !important;}.oridomi-holder{width:100%;position:absolute;top:0;bottom:0;-webkit-transform-style:preserve-3d;}.oridomi-stage{width:100%;height:100%;position:absolute;-webkit-transform:translate3d(-9999px, 0, 0);margin:0;padding:0;-webkit-transform-style:preserve-3d;}.oridomi-stage-left{-webkit-perspective-origin:0% 50%;}.oridomi-stage-right{-webkit-perspective-origin:100% 50%;}.oridomi-stage-top{-webkit-perspective-origin:50% 0%;}.oridomi-stage-bottom{-webkit-perspective-origin:50% 100%;}.oridomi-shader{width:100%;height:100%;position:absolute;opacity:0;top:0;left:0;pointer-events:none;-webkit-transition-property:opacity;}.oridomi-shader-left{background:-webkit-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(255, 255, 255, .35) 100%);}.oridomi-shader-right{background:-webkit-linear-gradient(right, rgba(0, 0, 0, .5) 0%, rgba(255, 255, 255, .35) 100%);}.oridomi-shader-top{background:-webkit-linear-gradient(top, rgba(0, 0, 0, .5) 0%, rgba(255, 255, 255, .35) 100%);}.oridomi-shader-bottom{background:-webkit-linear-gradient(bottom, rgba(0, 0, 0, .5) 0%, rgba(255, 255, 255, .35) 100%);}.oridomi-content{margin:0 !important;position:relative !important;float:none !important;-webkit-box-sizing:border-box !important;overflow:hidden !important;}.oridomi-mask{width:100%;height:100%;position:absolute;overflow:hidden;-webkit-transform:translate3d(0, 0, 0);outline:1px solid transparent;}.oridomi-panel{width:100%;height:100%;padding:0;position:absolute;-webkit-transition-property:-webkit-transform;-webkit-transform-origin:left;-webkit-transform-style:preserve-3d;}.oridomi-panel-h{-webkit-transform-origin:top;}.oridomi-stage-right .oridomi-panel{-webkit-transform-origin:right;}.oridomi-stage-bottom .oridomi-panel{-webkit-transform-origin:bottom;}</style></head>
+
+<body class="wordpress ltr en_US parent-theme y2023 m07 d27 h23 thursday logged-out singular singular-page singular-page-142 l2-column-ms l2-column page-parent-h5p-examples page-arithmetic-quiz page-142 chrome primary-inactive secondary-inactive subsidiary-inactive no-widgets">
+
+
+<div id="body-container" class="container">
+
+		
+			<!-- UBC Global Utility Menu -->
+        <div class="collapse expand" id="ubc7-global-menu">
+            <div id="ubc7-search" class="expand">
+            	                <div id="ubc7-search-box">
+                    <form class="form-search" method="get" action="https://www.ubc.ca/search/refine/" role="search">
+						<label for="q">Search UBC's H5P Open Hub</label>
+                        <input type="text" name="q" id="q" placeholder="Search UBC&#39;s H5P Open Hub" class="input-xlarge search-query">
+                        <input type="hidden" name="label" value="UBC&#39;s H5P Open Hub">
+                        <input type="hidden" name="site" value="*.ubc.ca">
+                        <button type="submit" class="btn">Search</button>
+                    </form>
+                </div>
+                            </div>
+                        <div id="ubc7-global-header" class="expand"><div class="row-fluid"><div class="span8 offset2"><ul class="reverse"><li><a href="https://www.calendar.ubc.ca/">Academic Calendar</a></li><li><a href="https://www.ubc.ca/landing/campusservices.html">Campus Services</a></li><li><a href="https://www.ubc.ca/landing/facultiesschools.html">Faculties &amp; Schools</a></li><li><a href="https://www.library.ubc.ca/">Library</a></li><li><a href="https://www.ubc.ca/about/maps.html">Maps</a></li><li><a href="https://www.ubc.ca/quicklinks/">Quicklinks</a></li><li><a href="https://ssc.adm.ubc.ca/sscportal/">Student Service Centre</a></li><li><a href="https://directory.ubc.ca/index.cfm">UBC Directory</a></li></ul></div></div></div>
+                    </div>
+        <!-- End of UBC Global Utility Menu -->
+			<!-- UBC Header -->
+        <header id="ubc7-header" class="row-fluid expand" role="banner">
+        	            <div class="span1">
+                <div id="ubc7-logo">
+                    <a href="http://www.ubc.ca/" title="The University of British Columbia (UBC)">The University of British Columbia</a>
+                </div>
+            </div>
+            <div class="span2">
+                <div id="ubc7-apom">
+                    <a href="https://cdn.ubc.ca/clf/ref/aplaceofmind" title="UBC a place of mind">UBC - A Place of Mind</a>
+                </div>
+            </div>
+            <div class="span9" id="ubc7-wordmark-block">
+                <div id="ubc7-wordmark">
+                    <a href="http://www.ubc.ca/" title="The University of British Columbia (UBC)">The University of British Columbia</a>
+                                    </div>
+                <div id="ubc7-global-utility">
+                    <button type="button" data-toggle="collapse" data-target="#ubc7-global-menu"><span>UBC Search</span></button>
+                    <noscript><a id="ubc7-global-utility-no-script" href="http://www.ubc.ca/" title="UBC Search">UBC Search</a></noscript>
+                </div>
+            </div>
+                    </header>
+        <!-- End of UBC Header -->
+
+		 	<!-- UBC Unit Identifier -->
+        <div id="ubc7-unit" class="row-fluid expand" style="">
+        	            <div class="span12">
+                <!-- Mobile Menu Icon -->
+                <div class="navbar">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target="#ubc7-unit-navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                </div>
+                <!-- Unit Name -->
+                <div id="ubc7-unit-name" class="ubc7-single-element">
+                    <a href="https://h5p.open.ubc.ca/" title="UBC&#39;s H5P Open Hub"><span id="ubc7-unit-faculty"></span><span id="ubc7-unit-identifier">UBC's H5P Open Hub</span></a>
+                </div>
+            </div>
+                    </div>
+        <!-- End of UBC Unit Identifier -->
+			<!-- UBC Unit Navigation -->
+        <div id="ubc7-unit-menu" class="navbar expand" role="navigation">
+            <div class="navbar-inner expand">
+                <div class="container">
+                 <div id="ubc7-unit-navigation" class="nav-collapse collapse"><ul id="menu-top" class="nav"><li id="menu-item-377" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-377"><a href="https://h5p.open.ubc.ca/">Home</a></li>
+<li id="menu-item-378" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-378"><div class="btn-group"><a class="btn" href="https://h5p.open.ubc.ca/about/">About</a><button class="btn droptown-toggle" data-toggle="dropdown"><span class="ubc7-arrow blue down-arrow"></span></button>
+<ul class="dropdown-menu">
+	<li id="menu-item-497" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-497"><a href="https://h5p.open.ubc.ca/about/roadmap/">Roadmap</a></li>
+	<li id="menu-item-379" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-379"><a href="https://h5p.open.ubc.ca/about/terms-of-service/">Terms of Service</a></li>
+</ul></div>
+</li>
+<li id="menu-item-380" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-380"><a href="https://h5p.open.ubc.ca/getting-started-with-h5p/why-use-h5p/">Why Use H5P</a></li>
+<li id="menu-item-381" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-381"><a href="https://h5p.open.ubc.ca/getting-started-with-h5p/">Getting Started with H5P</a></li>
+<li id="menu-item-382" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-382"><a href="https://h5p.open.ubc.ca/h5p-examples/">H5P Examples</a></li>
+<li id="menu-item-383" class="on-the-right log-in-link menu-item menu-item-type-custom menu-item-object-custom menu-item-383"><a href="https://h5p.open.ubc.ca/wp-admin/"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgb(0,33,69)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-unlock"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 9.9-1"></path></svg> Log In</a></li>
+<li id="menu-item-516" class="on-the-right dashboard-link menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-516"><div class="btn-group"><a class="btn" href="https://h5p.open.ubc.ca/wp-admin/"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgb(0,33,69)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tool"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg> Dashboard</a><button class="btn droptown-toggle" data-toggle="dropdown"><span class="ubc7-arrow blue down-arrow"></span></button>
+<ul class="dropdown-menu">
+	<li id="menu-item-517" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-517"><a href="https://h5p.open.ubc.ca/wp-admin/profile.php">Your Profile</a></li>
+</ul></div>
+</li>
+</ul></div>
+                </div>
+            </div><!-- /navbar-inner -->
+        </div><!-- /navbar -->
+        <!-- End of UBC Unit Navigation -->
+		    
+		
+		
+	<div id="container" class="expand">
+	
+		<div class="expand row-fluid" role="main">
+	<div id="content" class="hfeed content  span9">
+
+		
+		
+			<div id="post-142" class="hentry page publish post-1 odd author-mbcx9rvt">
+
+				<h1 class="page-title entry-title">Arithmetic Quiz</h1>
+				<div class="entry-content">
+					
+<p>A free HTML5 based application that auto-generates arithmetic quizzes consisting of multiple choice questions. No plugins needed. Use this to add Arithmetic Quizzes&nbsp;in publishing systems like Canvas, Brightspace, Blackboard, Moodle and WordPress.</p>
+
+
+
+<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+<div class="h5p-iframe-wrapper" style=""><iframe id="h5p-iframe-55" class="h5p-iframe h5p-initialized" data-content-id="55" style="height: 390px;" src="./Arithmetic Quiz_files/saved_resource.html" frameborder="0" scrolling="no" title="Test 03 Arithmetic Quiz"></iframe></div>
+
+
+
+<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgb(0,85,183)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-book-open"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></path></svg> Full Documentation: <a href="https://h5p.org/tutorial-arithmetic-quiz">https://h5p.org/tutorial-arithmetic-quiz</a></p>
+
+
+
+<div class="wp-block-group ubc-h5p-accessibility-note-group has-ubc-white-color has-ubc-secondary-blue-background-color has-text-color has-background is-layout-flow"><div class="wp-block-group__inner-container">
+<h2 class="has-ubc-white-color has-text-color wp-block-heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-triangle"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg> H5P WCAG Accessibility</h2>
+
+
+
+<p class="has-ubc-white-color has-text-color">Before using this content type in your course, please review <a href="https://documentation.h5p.com/content/1290410474004879128">the H5P Content Type Accessibility Table</a> to determine if the content type is accessible.</p>
+</div></div>
+
+
+
+<p></p>
+									</div><!-- .entry-content -->
+
+				
+			</div><!-- .hentry -->
+
+			
+			
+			
+		
+		
+	
+	</div><!-- .content .hfeed -->
+
+		</div>
+	</div><!-- #container -->
+	
+	
+
+	<!-- CLF Footer -->
+<footer id="ubc7-footer" class="expand" role="contentinfo">
+			<div class="row-fluid expand" id="ubc7-unit-footer">
+			            <div class="span10" id="ubc7-unit-address">
+                <div id="ubc7-address-unit-name">Centre for Teaching, Learning and Technology</div>
+                                                <div id="ubc7-address-street">Irving K. Barber Learning Centre</div>                <div id="ubc7-address-street2">214 – 1961 East Mall</div>                <div id="ubc7-address-location">
+                    <span id="ubc7-address-city">Vancouver</span>, <span id="ubc7-address-province">BC</span> <span id="ubc7-address-country">Canada</span> <span id="ubc7-address-postal">V6T 1Z1</span>                </div>
+                <div id="ubc7-address-phone">Tel 604 827 0360</div>                <div id="ubc7-address-fax">Fax 604 822 9826</div>                <div id="ubc7-address-website">Website <a href="https://h5p.open.ubc.ca/">h5p.open.ubc.ca</a></div>                <div id="ubc7-address-email">Email <a href="mailto:cms.support@ubc.ca">cms.support@ubc.ca</a></div>            </div>
+                                </div>
+			<div class="row-fluid expand ubc7-back-to-top">
+			            <div class="span2">
+                <a href="https://h5p.open.ubc.ca/h5p-examples/arithmetic-quiz/#" title="Back to top">Back to top <div class="ubc7-arrow up-arrow grey"></div></a>
+            </div>
+                    </div>
+			<div class="row-fluid expand" id="ubc7-global-footer">
+			            <div class="span5" id="ubc7-signature"><a href="http://www.ubc.ca/" title="The University of British Columbia (UBC)">The University of British Columbia</a></div>
+            <div class="span7" id="ubc7-footer-menu"><div class="row-fluid"><div class="span6"><h3>About UBC</h3><div><a href="https://www.ubc.ca/about/contact.html">Contact UBC</a></div><div><a href="https://www.ubc.ca/about/">About the University</a></div><div><a href="https://www.ubc.ca/landing/news.html">News</a></div><div><a href="https://www.ubc.ca/landing/events.html">Events</a></div><div><a href="https://hr.ubc.ca/careers-and-job-postings">Careers</a></div><div><a href="https://give.ubc.ca/">Make a Gift</a></div><div><a href="https://www.ubc.ca/search/">Search UBC.ca</a></div></div><div class="span6"><h3>UBC Campuses</h3><div><a href="https://www.ubc.ca/">Vancouver Campus</a></div><div><a href="https://ok.ubc.ca/">Okanagan Campus</a></div><h4>UBC Sites</h4><div><a href="https://robsonsquare.ubc.ca/">Robson Square</a></div><div><a href="https://thecdm.ca/">Centre for Digital Media</a></div><div><a href="https://www.med.ubc.ca/about/campuses/">Faculty of Medicine Across BC</a></div></div></div></div>
+                    </div>
+        <div class="row-fluid expand" id="ubc7-minimal-footer">
+        	            <div class="span12">
+                <ul>
+                    <li><a href="https://cdn.ubc.ca/clf/ref/emergency" title="Emergency Procedures">Emergency Procedures</a> <span class="divider">|</span></li>
+                    <li><a href="https://cdn.ubc.ca/clf/ref/terms" title="Terms of Use">Terms of Use</a> <span class="divider">|</span></li>
+                    <li><a href="https://cdn.ubc.ca/clf/ref/copyright" title="UBC Copyright">Copyright</a> <span class="divider">|</span></li>
+                    <li><a href="https://cdn.ubc.ca/clf/ref/accessibility" title="Accessibility">Accessibility</a></li>
+                </ul>
+            </div>
+                    </div>
+	</footer>
+<!-- End of CLF Footer -->
+	
+	
+
+	
+	
+
+</div><!-- #body-container -->
+
+<script>H5PIntegration = {"baseUrl":"https:\/\/h5p.open.ubc.ca","url":"\/wp-content\/uploads\/h5p","postUserStatistics":false,"ajax":{"setFinished":"https:\/\/h5p.open.ubc.ca\/wp-admin\/admin-ajax.php?token=3bbb015d76&action=h5p_setFinished","contentUserData":"https:\/\/h5p.open.ubc.ca\/wp-admin\/admin-ajax.php?token=7894f3a092&action=h5p_contents_user_data&content_id=:contentId&data_type=:dataType&sub_content_id=:subContentId"},"saveFreq":"30","siteUrl":"https:\/\/h5p.open.ubc.ca","l10n":{"H5P":{"fullscreen":"Fullscreen","disableFullscreen":"Disable fullscreen","download":"Download","copyrights":"Rights of use","embed":"Embed","size":"Size","showAdvanced":"Show advanced","hideAdvanced":"Hide advanced","advancedHelp":"Include this script on your website if you want dynamic sizing of the embedded content:","copyrightInformation":"Rights of use","close":"Close","title":"Title","author":"Author","year":"Year","source":"Source","license":"License","thumbnail":"Thumbnail","noCopyrights":"No copyright information available for this content.","reuse":"Reuse","reuseContent":"Reuse Content","reuseDescription":"Reuse this content.","downloadDescription":"Download this content as a H5P file.","copyrightsDescription":"View copyright information for this content.","embedDescription":"View the embed code for this content.","h5pDescription":"Visit H5P.org to check out more cool content.","contentChanged":"This content has changed since you last used it.","startingOver":"You'll be starting over.","by":"by","showMore":"Show more","showLess":"Show less","subLevel":"Sublevel","confirmDialogHeader":"Confirm action","confirmDialogBody":"Please confirm that you wish to proceed. This action is not reversible.","cancelLabel":"Cancel","confirmLabel":"Confirm","licenseU":"Undisclosed","licenseCCBY":"Attribution","licenseCCBYSA":"Attribution-ShareAlike","licenseCCBYND":"Attribution-NoDerivs","licenseCCBYNC":"Attribution-NonCommercial","licenseCCBYNCSA":"Attribution-NonCommercial-ShareAlike","licenseCCBYNCND":"Attribution-NonCommercial-NoDerivs","licenseCC40":"4.0 International","licenseCC30":"3.0 Unported","licenseCC25":"2.5 Generic","licenseCC20":"2.0 Generic","licenseCC10":"1.0 Generic","licenseGPL":"General Public License","licenseV3":"Version 3","licenseV2":"Version 2","licenseV1":"Version 1","licensePD":"Public Domain","licenseCC010":"CC0 1.0 Universal (CC0 1.0) Public Domain Dedication","licensePDM":"Public Domain Mark","licenseC":"Copyright","contentType":"Content Type","licenseExtras":"License Extras","changes":"Changelog","contentCopied":"Content is copied to the clipboard","connectionLost":"Connection lost. Results will be stored and sent when you regain connection.","connectionReestablished":"Connection reestablished.","resubmitScores":"Attempting to submit stored results.","offlineDialogHeader":"Your connection to the server was lost","offlineDialogBody":"We were unable to send information about your completion of this task. Please check your internet connection.","offlineDialogRetryMessage":"Retrying in :num....","offlineDialogRetryButtonLabel":"Retry now","offlineSuccessfulSubmit":"Successfully submitted results."}},"hubIsEnabled":true,"reportingIsEnabled":false,"libraryConfig":null,"crossorigin":null,"crossoriginCacheBuster":null,"pluginCacheBuster":"?v=1.15.5","libraryUrl":"https:\/\/h5p.open.ubc.ca\/wp-content\/plugins\/h5p\/h5p-php-library\/js","core":{"styles":["\/wp-content\/plugins\/h5p\/h5p-php-library\/styles\/h5p.css?ver=1.15.5","\/wp-content\/plugins\/h5p\/h5p-php-library\/styles\/h5p-confirmation-dialog.css?ver=1.15.5","\/wp-content\/plugins\/h5p\/h5p-php-library\/styles\/h5p-core-button.css?ver=1.15.5"],"scripts":["\/wp-content\/plugins\/h5p\/h5p-php-library\/js\/jquery.js?ver=1.15.5","\/wp-content\/plugins\/h5p\/h5p-php-library\/js\/h5p.js?ver=1.15.5","\/wp-content\/plugins\/h5p\/h5p-php-library\/js\/h5p-event-dispatcher.js?ver=1.15.5","\/wp-content\/plugins\/h5p\/h5p-php-library\/js\/h5p-x-api-event.js?ver=1.15.5","\/wp-content\/plugins\/h5p\/h5p-php-library\/js\/h5p-x-api.js?ver=1.15.5","\/wp-content\/plugins\/h5p\/h5p-php-library\/js\/h5p-content-type.js?ver=1.15.5","\/wp-content\/plugins\/h5p\/h5p-php-library\/js\/h5p-confirmation-dialog.js?ver=1.15.5","\/wp-content\/plugins\/h5p\/h5p-php-library\/js\/h5p-action-bar.js?ver=1.15.5","\/wp-content\/plugins\/h5p\/h5p-php-library\/js\/request-queue.js?ver=1.15.5"]},"loadedJs":[],"loadedCss":[],"contents":{"cid-55":{"library":"H5P.ArithmeticQuiz 1.1","jsonContent":"{\"arithmeticType\":\"multiplication\",\"maxQuestions\":5,\"UI\":{\"score\":\"Score:\",\"time\":\"Time: @time\",\"resultPageHeader\":\"Finished!\",\"go\":\"Go!\",\"startButton\":\"Start\",\"retryButton\":\"Retry\",\"correctText\":\"Correct\",\"incorrectText\":\"Incorrect. Correct answer was :num\",\"durationLabel\":\"Duration in hours, minutes and seconds.\",\"humanizedQuestion\":\"What does :arithmetic equal?\",\"plusOperator\":\"plus\",\"subtractionOperator\":\"minus\",\"multiplicationOperator\":\"times\",\"divisionOperator\":\"divided by\",\"slideOfTotal\":\"Slide :num of :total\",\"humanizedEquation\":\"For the equation :equation, what does :item equal?\",\"humanizedVariable\":\"What does :item equal?\",\"equalitySign\":\"equals\"},\"intro\":\"Solve these multiplication quizzes as fast as you can!\",\"quizType\":\"arithmetic\",\"equationType\":\"intermediate\",\"useFractions\":false}","fullScreen":"0","exportUrl":"\/wp-content\/uploads\/h5p\/exports\/test-03-arithmetic-quiz-55.h5p","embedCode":"<iframe src=\"https:\/\/h5p.open.ubc.ca\/wp-admin\/admin-ajax.php?action=h5p_embed&id=55\" width=\":w\" height=\":h\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\" title=\"Test 03 Arithmetic Quiz\"><\/iframe>","resizeCode":"<script src=\"https:\/\/h5p.open.ubc.ca\/wp-content\/plugins\/h5p\/h5p-php-library\/js\/h5p-resizer.js\" charset=\"UTF-8\"><\/script>","url":"https:\/\/h5p.open.ubc.ca\/wp-admin\/admin-ajax.php?action=h5p_embed&id=55","title":"Test 03 Arithmetic Quiz","displayOptions":{"frame":true,"export":true,"embed":true,"copyright":true,"icon":true,"copy":false},"metadata":{"title":"Test 03 Arithmetic Quiz","license":"U","defaultLanguage":"en"},"contentUserData":[{"state":"{}"}],"scripts":["\/wp-content\/uploads\/h5p\/cachedassets\/88a983c5f1d0e6a5ca97813c588f1bac155b688a.js"],"styles":["\/wp-content\/uploads\/h5p\/cachedassets\/88a983c5f1d0e6a5ca97813c588f1bac155b688a.css"]}}};</script><link rel="stylesheet" id="h5p-core-styles-h5p-css" href="./Arithmetic Quiz_files/h5p.css" type="text/css" media="all">
+<link rel="stylesheet" id="h5p-core-styles-h5p-confirmation-dialog-css" href="./Arithmetic Quiz_files/h5p-confirmation-dialog.css" type="text/css" media="all">
+<link rel="stylesheet" id="h5p-core-styles-h5p-core-button-css" href="./Arithmetic Quiz_files/h5p-core-button.css" type="text/css" media="all">
+<script type="text/javascript" src="./Arithmetic Quiz_files/ubc-clf.min.js.download" id="clf-js"></script>
+<script type="text/javascript" src="./Arithmetic Quiz_files/jquery.js.download" id="h5p-core-js-jquery-js"></script>
+<script type="text/javascript" src="./Arithmetic Quiz_files/h5p.js.download" id="h5p-core-js-h5p-js"></script>
+<script type="text/javascript" src="./Arithmetic Quiz_files/h5p-event-dispatcher.js.download" id="h5p-core-js-h5p-event-dispatcher-js"></script>
+<script type="text/javascript" src="./Arithmetic Quiz_files/h5p-x-api-event.js.download" id="h5p-core-js-h5p-x-api-event-js"></script>
+<script type="text/javascript" src="./Arithmetic Quiz_files/h5p-x-api.js.download" id="h5p-core-js-h5p-x-api-js"></script>
+<script type="text/javascript" src="./Arithmetic Quiz_files/h5p-content-type.js.download" id="h5p-core-js-h5p-content-type-js"></script>
+<script type="text/javascript" src="./Arithmetic Quiz_files/h5p-confirmation-dialog.js.download" id="h5p-core-js-h5p-confirmation-dialog-js"></script>
+<script type="text/javascript" src="./Arithmetic Quiz_files/h5p-action-bar.js.download" id="h5p-core-js-h5p-action-bar-js"></script>
+<script type="text/javascript" src="./Arithmetic Quiz_files/request-queue.js.download" id="h5p-core-js-request-queue-js"></script>
+
+
+<div id="4EA77366-AA4C-3D67-191E-34AF94AC2C71"><div></div></div></body></html>
