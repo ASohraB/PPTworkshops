@@ -13,8 +13,6 @@
                     plugins = [
                       "https://pyscript.net/latest/plugins/python/py_tutor.py"
                     ]
-                    [[fetch]]
-                    files = ["https://asohrab.github.io/PPTworkshops/pywasm/webserialdemo.py"]
                 </py-config>
             </py-tutor>
             <b>
@@ -43,7 +41,7 @@
             </div>
             <py-script src="d3.py"></py-script>
         </section>
-    <py-script src="webserialdemo.py"></py-script>
+    <py-script src="./PPTworkshops/pywasm/webserialdemo.py"></py-script>
     <button py-click="sm.askForSerial()" id="open">Open a Serial Port</button>
     <br><button py-click ="sendValueFromInputBox(sm)" id="write">Write to the serial port:</button>
     <input type="text" id="text">
